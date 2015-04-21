@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc service
- * @name Tabletop.Tabletop
+ * @name times.tabletop
  * @description
  * # Tabletop
  * Provider allowing easy config and return of Tabletop data in Angular.
  */
-angular.module('Tabletop', [])
+angular.module('times.tabletop', [])
   .provider('Tabletop', function () {
     var tabletopResponse;
 

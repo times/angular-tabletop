@@ -1,6 +1,6 @@
 # angular-tabletop
 ## An AngularJS provider allowing easy use of Tabletop.js via promises
-### 2014 Ændrew Rininsland
+### 2015 [Ændrew Rininsland](http://www.twitter.com/aendrew)
 
 #### Installation
 
@@ -9,7 +9,7 @@
   ```
   angular
     .module('myApp', [
-      'Tabletop'
+      'times.tabletop'
     ])
   ```
 1. Configure at runtime:
@@ -27,7 +27,7 @@
   ```
   angular
   .module('myApp', [
-    'Tabletop'
+    'times.tabletop'
     'ui.router'
   ])
   .config(function($stateProvider, $urlRouterProvider, TabletopProvider) {
