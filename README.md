@@ -54,6 +54,8 @@
 
   ```
 
+[Example Plunker](http://plnkr.co/edit/k3qdY0YZ6WofyihT623g?p=preview)
+
 ## Using Tabletop to provide i18n translation strings to angular-translate
 
 If you use [angular-translate](https://github.com/angular-translate/angular-translate), you can use Tabletop to store all your app's translations. This can also be used to give non-developers the ability to easily change an AngularJS app's microcopy — no more doing new builds for simple text tweaks!
