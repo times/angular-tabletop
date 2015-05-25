@@ -1,12 +1,10 @@
-'use strict';
-
 /**
  * @ngdoc service
- * @name times.tabletop
- * @description
- * # Tabletop
- * Provider allowing easy config and return of Tabletop data in Angular.
+ * @name times.tabletop.Tabletop
+ * @description Provider allowing easy config and return of Tabletop data in Angular.
  */
+'use strict';
+
 angular.module('times.tabletop', [])
   .provider('Tabletop', function () {
     var tabletopResponse;
@@ -23,9 +21,10 @@ angular.module('times.tabletop', [])
     };
 
     // Method for instantiating
-    this.$get = function ($q) {
+    this.$get = function ($q, $window) {
       tabletopResponse = $q.defer();
-      window.Tabletop.init(tabletopOptions);
+      $window.Tabletop.init(tabletopOptions);
+
       return tabletopResponse.promise;
     };
   });
