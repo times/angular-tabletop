@@ -21,10 +21,10 @@ angular.module('times.tabletop', [])
     };
 
     // Method for instantiating
-    this.$get = function ($q, $window) {
+    this.$get = ['$q', '$window', function ($q, $window) {
       tabletopResponse = $q.defer();
       $window.Tabletop.init(tabletopOptions);
 
       return tabletopResponse.promise;
-    };
+    }];
   });
